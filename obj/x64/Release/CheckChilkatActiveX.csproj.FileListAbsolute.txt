@@ -1,0 +1,16 @@
+C:\ckUnitTest\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.exe.config
+C:\ckUnitTest\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.exe
+C:\ckUnitTest\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.pdb
+C:\ckUnitTest\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Form1.resources
+C:\ckUnitTest\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Properties.Resources.resources
+C:\ckUnitTest\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache
+C:\ckUnitTest\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.exe
+C:\ckUnitTest\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.exe.config
+C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Form1.resources
+C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Properties.Resources.resources
+C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache

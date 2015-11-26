@@ -1,0 +1,1 @@
+C:\ckUnitTest\CheckChilkatActiveX\bin\Release\CheckChilkatActiveX.exe.config

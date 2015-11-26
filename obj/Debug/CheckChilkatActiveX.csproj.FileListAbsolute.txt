@@ -1,0 +1,9 @@
+C:\ckUnitTest\CheckChilkatActiveX\bin\Debug\CheckChilkatActiveX.exe.config
+C:\ckUnitTest\CheckChilkatActiveX\bin\Debug\CheckChilkatActiveX.exe
+C:\ckUnitTest\CheckChilkatActiveX\bin\Debug\CheckChilkatActiveX.pdb
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.csprojResolveAssemblyReference.cache
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.Form1.resources
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.Properties.Resources.resources
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.csproj.GenerateResource.Cache
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.exe
+C:\ckUnitTest\CheckChilkatActiveX\obj\Debug\CheckChilkatActiveX.pdb
