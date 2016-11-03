@@ -24,28 +24,52 @@ namespace CheckChilkatActiveX
 
 	private void button1_Click(object sender, EventArgs e)
 	    {
-	    string dllPath = null;
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+
+            string dllPath = null;
             string objectName = comboBox1.Text;
+
+            RegistryKey regRootKey;
+            string regRootStr = "";
+            if (chkPerUser.Checked)
+                {
+                regRootKey = Registry.CurrentUser;
+                regRootStr = "HKEY_CURRENT_USER";
+                regRootKey = regRootKey.OpenSubKey("Software\\Classes");
+                if (regRootKey == null)
+                    {
+                    textBox4.Text = "Failed to open HKEY_CURRENT_USER\\Software\\Classes";
+                    return;
+                    }
+                }
+            else
+                {
+                regRootKey = Registry.ClassesRoot;
+                regRootStr = "HKEY_CLASSES_ROOT";
+                }
 
 	    // The Chilkat ActiveX DLL contains many COM objects.  
 	    // Check for the CLSID subkey for the chosen ActiveX object.
-	    RegistryKey comKey = Registry.ClassesRoot.OpenSubKey(objectName + "\\CLSID");
+            RegistryKey comKey = regRootKey.OpenSubKey(objectName + "\\CLSID");
 	    if (comKey == null)
 		{
-		textBox4.Text = "HKEY_CLASSES_ROOT/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
+		textBox4.Text = regRootStr + "/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
 		return;
 		}
 	    string clsid = (string)comKey.GetValue("");
 	    if (clsid == null)
 		{
-                textBox4.Text = "HKEY_CLASSES_ROOT/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
+                textBox4.Text = regRootStr + "/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
 		return;
 		}
 	    else
 		{
 		// Find the path to the DLL.
 		textBox2.Text = clsid;
-		comKey = Registry.ClassesRoot.OpenSubKey("CLSID\\" + clsid + "\\InprocServer32");
+                comKey = regRootKey.OpenSubKey("CLSID\\" + clsid + "\\InprocServer32");
 		dllPath = (string)comKey.GetValue("");
 		if (dllPath == null)
 		    {
