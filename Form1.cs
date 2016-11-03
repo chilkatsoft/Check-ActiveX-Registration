@@ -25,19 +25,20 @@ namespace CheckChilkatActiveX
 	private void button1_Click(object sender, EventArgs e)
 	    {
 	    string dllPath = null;
+            string objectName = comboBox1.Text;
 
 	    // The Chilkat ActiveX DLL contains many COM objects.  
-	    // Check for the CLSID subkey for one of them (in this case, Ftp2)
-	    RegistryKey comKey = Registry.ClassesRoot.OpenSubKey("Chilkat_9_5_0.Ftp2\\CLSID");
+	    // Check for the CLSID subkey for the chosen ActiveX object.
+	    RegistryKey comKey = Registry.ClassesRoot.OpenSubKey(objectName + "\\CLSID");
 	    if (comKey == null)
 		{
-		textBox4.Text = "HKEY_CLASSES_ROOT/Chilkat_9_5_0.Ftp2 not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
+		textBox4.Text = "HKEY_CLASSES_ROOT/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
 		return;
 		}
 	    string clsid = (string)comKey.GetValue("");
 	    if (clsid == null)
 		{
-		textBox4.Text = "HKEY_CLASSES_ROOT/Chilkat_9_5_0.Ftp2 not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
+                textBox4.Text = "HKEY_CLASSES_ROOT/" + objectName + " not found.  The " + m_bitSizeStr + " ActiveX is not registered.";
 		return;
 		}
 	    else
@@ -83,21 +84,18 @@ namespace CheckChilkatActiveX
 
 		}
 
-	    // Now try to create an instance of an object contained in the ActiveX DLL.  We'll try to create the Crypt2 object:
-	    dynamic crypt2 = Activator.CreateInstance(Type.GetTypeFromProgID("Chilkat_9_5_0.Crypt2"));
-	    if (crypt2 == null)
+	    // Now try to create an instance of an object contained in the ActiveX DLL. 
+            dynamic chilkatObj = Activator.CreateInstance(Type.GetTypeFromProgID(objectName));
+            if (chilkatObj == null)
 		{
-		textBox4.Text = "Failed to load the DLL and instantiate a Chilkat ActiveX object.";
+		textBox4.Text = "Failed to load the DLL and instantiate " + objectName;
 		}
 	    else
 		{
-		// What is the version of this Chilkat ActiveX component?
-		textBox1.Text = crypt2.Version;
-
-		// Do something to get the LastErrorText..
-		crypt2.UnlockComponent("Test");
-		textBox4.Text = crypt2.LastErrorText;
-		}
+		// What is the version of this Chilkat ActiveX object?
+                textBox1.Text = chilkatObj.Version;
+                textBox4.Text = "Successfully created an instance of " + objectName + ", version = " + chilkatObj.Version;
+                }
 
 	    }
 
@@ -116,5 +114,39 @@ namespace CheckChilkatActiveX
 		this.Text = "Check the 64-bit Chilkat ActiveX Registration";
 		}
 	    }
+
+        private void button2_Click(object sender, EventArgs e)
+            {
+            //string subKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{3C3D696B-0DB7-3C6D-A356-3DB8CE541918}";
+            //RegistryKey comKey = Registry.LocalMachine.OpenSubKey(subKey);
+            //    //ClassesRoot.OpenSubKey(objectName + "\\CLSID");
+            //if (comKey == null)
+            //    {
+            //    textBox4.Text = "Failed to open HKLM " + subKey;
+            //    return;
+            //    }
+
+            StringBuilder sb = new StringBuilder();
+
+            string rootkey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
+            var subkeys = Registry.LocalMachine.OpenSubKey(rootkey).GetSubKeyNames();
+            foreach (string subkey in subkeys)
+                {
+                RegistryKey key = Registry.LocalMachine.OpenSubKey(rootkey + @"\" + subkey);
+                string displayname = key.GetValue("DisplayName") as string;
+                if (displayname != null)
+                    {
+                    if (displayname.Trim().Length > 0)
+                        {
+                        if (displayname.Contains("Microsoft") && displayname.Contains("C++") && displayname.Contains("Redist"))
+                            {
+                            sb.Append(displayname + "\r\n");
+                            }
+                        }
+                    }
+                }
+
+            textBox4.Text = sb.ToString();
+            }
 	}
     }

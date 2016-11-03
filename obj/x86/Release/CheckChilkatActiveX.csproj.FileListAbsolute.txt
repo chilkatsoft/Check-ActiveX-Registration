@@ -18,3 +18,9 @@ C:\ck2000\intelApps\CheckChilkatActiveX\bin\x86\Release\CheckChilkatActiveX.pdb
 C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x86\Release\CheckChilkatActiveX.exe.config
 C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.exe
 C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x86\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x86\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.csprojResolveAssemblyReference.cache
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.Form1.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.Properties.Resources.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x86\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache

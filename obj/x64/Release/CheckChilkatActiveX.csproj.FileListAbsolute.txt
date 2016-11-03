@@ -14,3 +14,11 @@ C:\ck2000\intelApps\CheckChilkatActiveX\bin\x64\Release\CheckChilkatActiveX.pdb
 C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Form1.resources
 C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.Properties.Resources.resources
 C:\ck2000\intelApps\CheckChilkatActiveX\obj\x64\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x64\Release\CheckChilkatActiveX.exe.config
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x64\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x64\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x64\Release\CheckChilkatActiveX.Form1.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x64\Release\CheckChilkatActiveX.Properties.Resources.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x64\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x64\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\x64\Release\CheckChilkatActiveX.pdb
