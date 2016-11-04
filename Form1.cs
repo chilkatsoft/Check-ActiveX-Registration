@@ -141,15 +141,6 @@ namespace CheckChilkatActiveX
 
         private void button2_Click(object sender, EventArgs e)
             {
-            //string subKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{3C3D696B-0DB7-3C6D-A356-3DB8CE541918}";
-            //RegistryKey comKey = Registry.LocalMachine.OpenSubKey(subKey);
-            //    //ClassesRoot.OpenSubKey(objectName + "\\CLSID");
-            //if (comKey == null)
-            //    {
-            //    textBox4.Text = "Failed to open HKLM " + subKey;
-            //    return;
-            //    }
-
             StringBuilder sb = new StringBuilder();
 
             string rootkey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
@@ -168,6 +159,18 @@ namespace CheckChilkatActiveX
                             }
                         }
                     }
+                }
+
+            sb.Append("\r\n");
+            if (m_is32bit)
+                {
+                // 32-bit
+                sb.Append("Note: The 32-bit Chilkat ActiveX uses any \"Microsoft Visual C++ 2008 Redistributable - x86 9.0.*\"\r\n");
+                }
+            else if (IntPtr.Size == 8)
+                {
+                // 64-bit
+                sb.Append("Note: The 64-bit Chilkat ActiveX uses any \"Microsoft Visual C++ 2008 Redistributable - x64 9.0.*\"\r\n");
                 }
 
             textBox4.Text = sb.ToString();
