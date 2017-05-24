@@ -1,0 +1,1 @@
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\x64\Debug\CheckChilkatActiveX.exe.config
