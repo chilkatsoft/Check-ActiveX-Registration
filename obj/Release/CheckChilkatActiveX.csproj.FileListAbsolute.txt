@@ -1,1 +1,10 @@
 C:\ckUnitTest\CheckChilkatActiveX\bin\Release\CheckChilkatActiveX.exe.config
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\Release\CheckChilkatActiveX.exe.config
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\Check-ActiveX-Registration\bin\Release\CheckChilkatActiveX.pdb
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.csprojResolveAssemblyReference.cache
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.Form1.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.Properties.Resources.resources
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.csproj.GenerateResource.Cache
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.exe
+C:\ck2000\intelApps\Check-ActiveX-Registration\obj\Release\CheckChilkatActiveX.pdb
